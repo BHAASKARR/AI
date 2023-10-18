@@ -1,0 +1,29 @@
+
+Sagemaker -> studio :
+  download existing notebook from public s3 bucket from terminal.
+
+ We are installing a library called Torch data, which helps with the data loading and some other aspects for PyTorch specific to data-sets. Here we see Transformers. This is a library from Hugging Face, a really cool company who has built a whole lot of open source tooling for large language models. They also had built this library, this Python library called data-sets, that can load in many of the common public data-sets that people use to either train models, fine tune models, or just experiment with
+torch==1.13.1
+torchdata==0.5.1
+transformers==4.27.2
+datasets==2.11.0
+FLAN-T5 model is general purpose model will do whole lot of tasks like summarize the model
+Auto tokenizer to convert raw text from our conversation to vector space that can be processed by FLAN-T5 model
+
+summary dialogue with instruction prompt:
+prompt engineering is imp concept in using foundation models for text generation.
+a) zero shot inference with instruction prompt:(in context learning)
+  in order to instruct the model to perform a task- summarize a dialogue- you can take the dialogue and convert 
+it into an instruction prompt. 
+
+b) 1 shot: add 1 full dialogue-summary pair to prompt
+  put sample example
+c) few shots(less than 4 or max 6): add 2 more full dialogue summary pairs to prompt
+  put few samples
+Note: make sure model's context length not more than 512.
+      Token indices sequence length is longer than the specified amx sequence length for this model (819>512) will result in indexing errors
+You can play with "generative configuration parameters for inference" like temperature(0.1 to 2.0), do_sample(true), max_new_tokens=50
+
+ Will do the dialogue summarization task using generative AI. You will explore how the input text affects the output of the model, and perform prompt engineering to direct it towards the task you need. By comparing zero shot, one shot, and few shot inferences, you will take the first step towards prompt engineering and see how it can enhance the generative output of Large Language Models
+
+
