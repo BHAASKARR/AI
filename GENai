@@ -1,0 +1,9 @@
+
+AI [ML[Deep learning[Generative AI[LLMs+foundation models]]]]
+LLMS:
+  encoding + transformer model (+ human feedback) + decoding 
+  text to nums -? meaningful words 
+
+  pre-training models. fine-tuned models
+
+DATASETS -> MODELS --> APPLICATIONS
